@@ -39,14 +39,14 @@ Feel free to open a pull request to add new themes! :^)
 
 1. **[Waybar](https://github.com/Alexays/Waybar)**
 
-2. A **terminal emulator** (default: Kitty)
+2. A **terminal emulator** (default: alacritty)
 
 > [!IMPORTANT]
-> If you use a different emulator, replace all `kitty` commands accordingly. For
+> If you use a different emulator, replace all `alacritty` commands accordingly. For
 > example:
 >
 > ```diff
-> - "on-click": "kitty -e ..."
+> - "on-click": "alacritty -e ..."
 > + "on-click": "ghostty -e ..."
 > ```
 
@@ -63,7 +63,7 @@ Feel free to open a pull request to add new themes! :^)
 2. Clone the repository:
 
 	```bash
-	git clone https://github.com/sejjy/mechabar.git ~/.config/waybar
+	git clone https://github.com/lkrkerry1/mechabar.git ~/.config/waybar
 	```
 
 3. Install the dependencies and restart Waybar:
@@ -118,11 +118,11 @@ You can set keybinds to execute scripts from the [scripts](./scripts/)
 directory. For example:
 
 ```properties
-# ~/.config/hypr/hyprland.conf
+# ~/.config/hypr/niri.conf
 
 $scripts = ~/.config/waybar/scripts
 $mod = Super
-$terminal = kitty
+$terminal = alacritty
 
 # Launch CLI
 bind = $mod, B, exec, $terminal -e $scripts/bluetooth
@@ -190,6 +190,6 @@ cp themes/catppuccin-latte.css theme.css
 
 ### References
 
-- [Hyprland wiki: Binds ↗](https://wiki.hypr.land/Configuring/Binds/)
+- [niri wiki: Binds ↗](https://wiki.hypr.land/Configuring/Binds/)
 - [Nerd Fonts wiki: Glyph Sets](https://github.com/ryanoasis/nerd-fonts/wiki/Glyph-Sets-and-Code-Points)
 - [Waybar wiki](https://github.com/Alexays/Waybar/wiki)

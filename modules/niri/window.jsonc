@@ -1,9 +1,9 @@
 {
-	"hyprland/window": {
+	"niri/window": {
 		"format": "{}",
 		"rewrite": {
 			"": "Desktop",
-			"kitty": "Terminal",
+			"alacritty": "Terminal",
 			"zsh": "Terminal",
 			"~": "Terminal"
 		},

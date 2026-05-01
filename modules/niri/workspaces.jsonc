@@ -1,15 +1,12 @@
 {
-	"hyprland/workspaces": {
+	"niri/workspaces": {
 		// "active-only":
 		// "hide-active":
 		// "all-outputs":
 		"format": "{icon}",
 		"format-icons": {
-			"active": "",
+			"focused": "",
 			"default": ""
-		},
-		"persistent-workspaces": {
-			"*": 5
 		},
 		// "persistent-only":
 		// "show-special":
@@ -30,8 +27,8 @@
 		},
 		// "move-to-monitor":
 		// "ignore-workspaces":
-		"on-scroll-up": "hyprctl dispatch workspace +1",
-		"on-scroll-down": "hyprctl dispatch workspace -1",
+		"on-scroll-up": "niri msg action focus-workspace-next",
+		"on-scroll-down": "niri msg action focus-workspace-previous",
 		// "expand":
 		"cursor": true
 	}
